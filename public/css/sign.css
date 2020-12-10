@@ -1,0 +1,336 @@
+/* override bootstrap styles */
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+
+.navbar-form input, .form-inline input {
+  width:auto;
+}
+
+body {
+  padding-top:50px;
+  color:#646464;
+  background-image: url("../images/well.jpg") ;
+  background-size: cover;
+}
+
+h1,h2,h3,.highlight,.navbar a,#masthead h4 {
+  font-family:'Oswald',arial narrow,sans-serif;
+}
+
+footer {
+
+  margin-top:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color:#0c0907;
+ 
+}
+
+
+#masthead {
+  min-height:199px;
+  background-color:rgb(51, 27, 27);
+  color:#aaaacc;
+}
+
+#masthead h1 {
+  font-size: 55px;
+  line-height: 1;
+  color:#fefeff;
+  margin-top:50px;
+}
+
+#masthead .well {
+  margin-top:31px;
+  background: url("../images/well.jpg") no-repeat center center;
+  background-size: cover;
+  border-color:#000022;
+  min-height:127px;
+}
+.main{
+  background-color: #000000;
+}
+.panel-body{
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.6;
+  color:#000;
+}
+.panel{
+  background-color: rgb(51, 27, 27);
+  margin-top: 25px;
+}
+
+.navbar.affix {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+.top-spacer {
+  background-color:#ffffff;
+  height:40px;
+}
+
+a,a:hover {
+  color:#223344;
+  text-decoration:none;
+}
+
+.icon-bar {
+  background-color:#fff;
+}
+.pic{
+  min-height: 500px;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  background: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80") no-repeat ;
+}
+.form {
+  margin-bottom: 40px !important;}
+form .field{
+  height: 45px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+form .field input{
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgrey;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+form .field input:focus{
+  border-color: #27ae60;
+  box-shadow: inset 0 0 3px #2fd072;
+}
+form .field .showBtn{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
+  
+}
+
+/*user-select: none; */
+
+form .indicator {
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  display: none;
+}
+form .indicator span{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: lightgrey;
+  border-radius: 5px;
+}
+/*form .indicator span:nth-child(2)*/
+form .indicator span.medium{
+  margin: 0 3px;
+}
+form .indicator span:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+
+}
+.indicator span.active.weak:before{
+  background-color: #ff4757;
+}
+.indicator span.active.medium:before{
+  background-color: orange;
+}
+.indicator span.active.strong:before{
+  background-color: #23ad5c;
+}
+form .text{
+  font-size: 20px;
+  font-weight: 500;
+  display: none;
+  margin-bottom: -10px;
+}
+form .text.weak{
+  color: #ff4757;
+}
+form .text.medium{
+  color: orange;
+}
+form .text.strong{
+  color: #23ad5c;
+}
+#message{
+display: none;
+background: #f1f1f1;
+color: #000;
+position: relative;
+padding: 20px;
+margin-top: 10px;
+}
+#message p{
+padding: 10px 5px;
+font-size: 18px;
+}
+
+/* Full-width inputs */
+input[type = email], input[type = password], input[type= tel] ,input[type=text],input[type=date]{
+  width: 100%;
+  font-size: 17px;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  background-color:black;
+  color:#fefeff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px 5px;
+  margin: 2px 2px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  border-radius: 5px;
+  text-align: center;
+}
+/* Set text colour on button white*/
+button a{
+  color: antiquewhite;
+}
+/* Removed underline from links*/
+a{
+text-decoration: none;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 8px 0px;
+  float:right ;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 80px;
+  }
+}
+
+.navbar-bright {
+  background-color:#0c0907;
+  color:#fff;
+  margin-bottom: 0;
+  border-width: 0;
+}
+
+.navbar-bright a, .navbar-bright .navbar-brand, #masthead h4 {
+  color:#ccccdd;
+  font-size:14px;
+  text-transform: uppercase;
+  letter-spacing:.08em;
+}
+
+.navbar-bright li > a:hover {
+  background-color:#000044;
+}
+
+.dropdown-menu {
+  min-width: 250px;
+}
+
+.caret {
+  color:#fff;
+}
+
+.navbar-toggle {
+  color:#fff;
+  border-width:0;
+}
+
+.navbar-toggle:hover {
+  background-color:#fff;
+}
+
+.panel {
+  border-color:transparent;
+  border-radius:0;
+}
+
+.thumbnail {
+  margin-bottom:8px;
+}
+
+.img-container {
+  overflow:hidden;
+  height:170px;
+}
+
+.img-container img {
+  min-width:280px;
+  min-height:180px;
+  max-width:380px;
+  max-height:280px;
+}
+
+.txt-container {
+  overflow:hidden;
+  height:100px;
+}
+
+.panel .lead {
+  overflow:hidden;
+  height:90px;
+}
+
+.label-float{
+  margin:0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width:100%;
+  opacity:.9;
+  padding:6px;
+  color:#fff;
+}
+    
+.btn-twitter {background-color:#4099FF;color:#fff;}
+.btn-facebook {background-color:#3B5998;color:#fff;}
+.btn-google-plus {background-color:#d34836;color:#fff;}
+
+.btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
+.btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
+.btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
+
+
+
